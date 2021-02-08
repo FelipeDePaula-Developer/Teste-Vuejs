@@ -1,21 +1,20 @@
 <template>
   <div id="app">
-    <h1>Testee</h1>
-    <cliente/>
+    <Navbar/>
   </div>
 </template>
 
 <script>
-import Cliente from './components/cliente.vue'
+import Navbar from './components/navbar.vue'
 
 export default {
   name: 'App',
   components:{
-    Cliente
+    Navbar
   }
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
