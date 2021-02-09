@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Buefy from 'buefy' 
 import App from './App.vue'
-import '../node_modules/buefy/dist/buefy.css' 
+import '../src/assets/main.scss' 
 
 Vue.use(Buefy)
 Vue.config.productionTip = false
