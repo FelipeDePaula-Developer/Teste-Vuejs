@@ -1,8 +1,13 @@
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:wght@400;700&display=swap");
+
 // Set your colors
 $primary: #00adb5;
+$roboto: 'Roboto', sans-serif;
+$marck: 'Marck Script', cursive;
 $transparent: transparent;
 $primary-light: findLightColor($primary);
 $primary-dark: findDarkColor($primary);
@@ -68,7 +73,7 @@ $colors: mergeColorMaps(
             $danger-invert,
             $danger-light,
             $danger-dark,
-        )
+        ),
     ),
     $custom-colors
 );

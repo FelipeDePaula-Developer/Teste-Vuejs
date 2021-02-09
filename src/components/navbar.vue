@@ -2,7 +2,7 @@
   <div class="bg-img">
     <section class="hero is-transparent is-large">
       <div class="hero-head">
-        <b-navbar>
+        <b-navbar class="is-roboto" :transparent="true">
           <template #brand>
             <b-navbar-item tag="a" :to="{ path: '/' }">
               <img src="../assets/logo.png" />
@@ -28,8 +28,8 @@
       </div>
       <div class="hero-body">
         <div class="container has-text-centered">
-          <p class="title has-text-white">Teste</p>
-          <p class="subtitle has-text-white">Teste do Teste</p>
+          <p class="title has-text-white is-marck">Firefly Tec</p>
+          <p class="subtitle has-text-white"></p>
         </div>
       </div>
     </section>
