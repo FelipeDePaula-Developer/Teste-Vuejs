@@ -47,7 +47,6 @@ export default {};
   .marck-title{
     font-family: "Marck Script", cursive !important;
     font-size: 96px;
-    filter: drop-shadow(6
-    px 5px 4px #000000 );
+    filter: drop-shadow(6px 5px 4px #000000 );
   }
 </style>
