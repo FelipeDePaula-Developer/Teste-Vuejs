@@ -3,7 +3,6 @@
 
 // Set your colors
 $primary: #00adb5;
-$transparent: transparent;
 $primary-light: findLightColor($primary);
 $primary-dark: findDarkColor($primary);
 $primary-invert: findColorInvert($primary);

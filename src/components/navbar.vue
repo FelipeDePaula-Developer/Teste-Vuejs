@@ -1,8 +1,8 @@
 <template>
   <div class="bg-img">
-    <section class="hero is-transparent is-large">
+    <section class="hero  is-large">
       <div class="hero-head">
-        <b-navbar>
+        <b-navbar class="is-transparent is-size-6">
           <template #brand>
             <b-navbar-item tag="a" :to="{ path: '/' }">
               <img src="../assets/logo.png" />
@@ -28,8 +28,7 @@
       </div>
       <div class="hero-body">
         <div class="container has-text-centered">
-          <p class="title has-text-white">Teste</p>
-          <p class="subtitle has-text-white">Teste do Teste</p>
+          <p class="has-text-white marck-title">Firefly</p>
         </div>
       </div>
     </section>
@@ -44,6 +43,11 @@ export default {};
 	.bg-img { 
         background-image: url(../assets/bg-homepage.png) ;
         background-size:  cover;
-	}
-	
+  }
+  .marck-title{
+    font-family: "Marck Script", cursive !important;
+    font-size: 96px;
+    filter: drop-shadow(6
+    px 5px 4px #000000 );
+  }
 </style>
