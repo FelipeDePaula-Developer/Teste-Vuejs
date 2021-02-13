@@ -1,6 +1,6 @@
 <template>
   <div class="bg-img">
-    <section class="hero  is-large">
+    <section class="hero is-large">
       <div class="hero-head">
         <b-navbar class="is-transparent is-size-6">
           <template #brand>
@@ -17,10 +17,12 @@
             <b-navbar-item class="has-text-white">Contato</b-navbar-item>
             <b-navbar-item tag="div">
               <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Cadastre-se</strong>
-                </a>
-                <a class="button is-light"> Log in </a>
+                <router-link to="/register" class="button is-primary">
+                  Cadastre-se
+                </router-link>
+                <router-link to="/login" class="button is-light">
+                  Log in
+                </router-link>
               </div>
             </b-navbar-item>
           </template>
@@ -40,13 +42,13 @@ export default {};
 </script>
 
 <style scoped>
-	.bg-img { 
-        background-image: url(../assets/bg-homepage.png) ;
-        background-size:  cover;
-  }
-  .marck-title{
-    font-family: "Marck Script", cursive !important;
-    font-size: 96px;
-    filter: drop-shadow(6px 5px 4px #000000 );
-  }
+.bg-img {
+  background-image: url(../assets/bg-homepage.png);
+  background-size: cover;
+}
+.marck-title {
+  font-family: "Marck Script", cursive !important;
+  font-size: 96px;
+  filter: drop-shadow(6px 5px 4px #000000);
+}
 </style>
