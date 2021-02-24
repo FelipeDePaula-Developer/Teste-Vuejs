@@ -1,41 +1,49 @@
 <template>
   <div>
     <section>
-      <form action="" method="post">
+      <form method="post" @submit.prevent="addCad">
         <b-field label="Email" :label-position="onBorder">
-          <b-input name="email" id="email" type="email"></b-input>
+          <b-input v-model="dataUser.email" type="email"></b-input>
         </b-field>
         <b-field label="Senha" :label-position="onBorder">
-          <b-input name="senha" id="senha" type="password"></b-input>
+          <b-input v-model="dataUser.senha" type="password"></b-input>
         </b-field>
         <b-field label="Nome" :label-position="onBorder">
-          <b-input name="nome" id="nome" type="text"></b-input>
+          <b-input v-model="dataUser.nome" type="text"></b-input>
         </b-field>
-        <b-button native-type="submit" id="btn-cadastrar" class="is-success" outlined> Cadastrar </b-button>
+        <b-button
+          native-type="submit"
+          name="btn-cadastrar"
+          class="is-success"
+          outlined
+        >
+          Cadastrar
+        </b-button>
       </form>
     </section>
   </div>
 </template>
 <script>
-  document.querySelector("#btn-cadastrar").addEventListener("submit", async event =>{
-    event.preventDefault()
-
-    const email = document.querySelector("#email").innerHTML
-    // const senha = document.querySelector("#senha").value
-    // const nome = document.querySelector("#nome").value
-    axios.post("http://localhost:8082/",
-        {
-          email: `${email}`
-        }
-    )
-    
-  })
+import dataUser from "../config/requests.js";
 
 export default {
   data() {
     return {
+      dataUser: {
+        email: "",
+        senha: "",
+        nome: "",
+      },
       onBorder: "on-border",
     };
+  },
+
+  methods: {
+    addCad() {
+      dataUser.post(this.dataUser).then(() => {
+        alert("Salvo?");
+      });
+    },
   },
 };
 </script>
